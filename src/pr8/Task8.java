@@ -17,6 +17,12 @@ public class Task8 {
     public static void main(String[] args) {
         System.out.println("Введите слово" + '\n');
         String s = new Scanner(System.in).next();
-        System.out.println(isPalindrome(s, 0, s.length() - 1) ? "YES" : "NO");
+        if(isPalindrome(s, 0, s.length() - 1) == true)
+        {
+            System.out.println("YES");
+        }
+        else {
+            System.out.println("NO");
+        }
     }
 }
